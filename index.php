@@ -58,16 +58,19 @@
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">S&OP Pro</h5> -->
-        <h4><a href="http://localhost/project/laravel_demo/login" >Payroll</a></h4>
+         
+        
+        <h4><a href="http://127.0.0.1:1100"  target="_blank" id="payroll">Payroll</a></h4>
 
       </div>
     </div>
   </div>
   <div class="col-sm-6">
     <div class="card border">
-      <div class="card-body">
+      <div class="card-body">     
+
         <!-- <h5 class="card-title">Fiexed Asset </h5> -->
-        <h4><a href="http://localhost/project/project2" >Fiexed Asset</a></h4>
+        <h4><a href="http://localhost/project/project2" target="_blank">Fiexed Asset</a></h4>
       </div>
     </div>
   </div>
@@ -75,7 +78,7 @@
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">Payroll</h5> -->
-        <h4><a href="http://localhost/test/test_2">S&OP Pro</a></h4>
+        <h4><a href="http://localhost/test/test_2" target="_blank">S&OP Pro</a></h4>
       </div>
     </div>
   </div>
@@ -83,7 +86,8 @@
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">Sales Force Automation</h5> -->
-        <h4><a href="http://localhost/test/test_4" >Sales Force Automation</a></h4>
+        <!-- <SFA.bat -->
+        <h4><a href="http://127.0.0.1:2500" target="_blank">Sales Force Automation</a></h4>
       </div>
     </div>
   </div>
@@ -99,7 +103,7 @@
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">Sales Force Automation</h5> -->
-        <h4><a href="http://localhost/test/test_4" >AR/AP</a></h4>
+        <h4><a href="http://localhost/test/test_4"  target="_blank" >AR/AP</a></h4>
       </div>
     </div>
   </div>
@@ -108,7 +112,7 @@
     <div class="card border bg-success">
       <div class="card-body">
         <!-- <h5 class="card-title">Sales Force Automation</h5> -->
-        <h4><a href="http://localhost/test/test_4" >Tutorial</a></h4>
+        <h4><a href="http://localhost/test/test_4" target="_blank" >Tutorial</a></h4>
       </div>
     </div>
   </div>
@@ -120,5 +124,28 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
+
+
+    <script>
+
+
+// $('#payroll').on("click",function(e){
+//   e.preventDefault();
+//   console.log('Payroll');
+//   test('http://127.0.0.1:1100',1);
+
+// });
+// function test(href, newTab) {
+  <?php// exec('Payroll.bat');
+//     ?>
+//    var a = document.createElement('a');
+//    a.href = href;
+//    if (newTab) {
+//       a.setAttribute('target', '_blank');
+//    }
+//    a.click();
+// }
+
+</script>
 </body>
 </html>
