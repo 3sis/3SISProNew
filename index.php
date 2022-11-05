@@ -15,10 +15,12 @@
 
     <style>
         .border{
-          border: 1px solid #f0f;
-          background: #F5821F;
+            
+          border: 5px solid #FFF;
+          background: #F5821F;          
         }
          body.maintanence > .maintanence-content {
+            
             min-height: 107vh;
             display: flex;
             align-items: center;
@@ -53,14 +55,60 @@
 
     <div class="container-fluid maintanence-content">
 
+
+<?php
+if(isset($_GET['project_name']) && $_GET['project_name'] != ''){
+      
+    if($_GET['project_name'] == 'Payroll'){
+
+      
+    function execInBackground($cmd) {
+
+    // echo substr(php_uname(), 0, 7);die;
+
+    //  Windows NT DESKTOP-RLUTBIV 10.0 build 22621 (Windows 10) AMD64
+
+      if (substr(php_uname(), 0, 7) == "Windows"){
+          popen("start /B ". $cmd, "r");
+        
+          // pclose(popen("start /B ". $cmd, "r"));
+     
+        // header("Location:http://127.0.0.1:1100");
+
+
+        echo '<script>
+        var window = window.open("http://127.0.0.1:1100", "_blank");
+        window.focus();
+        </script>';
+
+
+        
+      }
+      else {
+          // exec($cmd . " > /dev/null &"); 
+      }
+
+        // exec('Payroll.bat');
+        // header("Location:127.0.0.1:1100");
+    }
+
+
+    execInBackground('Payroll.bat');
+
+
+
+  }
+
+    
+}
+?>
+
        <div class="row">
   <div class="col-sm-6">
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">S&OP Pro</h5> -->
-         
-        
-        <h4><a href="http://127.0.0.1:1100"  target="_blank" id="payroll">Payroll</a></h4>
+        <h4><a href="javascript:vaoid(0)"  target="_blank" id="payroll">Payroll</a></h4>
 
       </div>
     </div>
@@ -118,34 +166,16 @@
   </div>
 </div>
     </div>
-
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
-
-
     <script>
-
-
-// $('#payroll').on("click",function(e){
-//   e.preventDefault();
-//   console.log('Payroll');
-//   test('http://127.0.0.1:1100',1);
-
-// });
-// function test(href, newTab) {
-  <?php// exec('Payroll.bat');
-//     ?>
-//    var a = document.createElement('a');
-//    a.href = href;
-//    if (newTab) {
-//       a.setAttribute('target', '_blank');
-//    }
-//    a.click();
-// }
-
+      $('#payroll').on("click",function(e){
+        e.preventDefault();
+        window.location.href = window.location.href+'?project_name=Payroll';
+      });
 </script>
 </body>
 </html>
