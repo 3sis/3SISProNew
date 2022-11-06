@@ -42,11 +42,12 @@
             <ul class="navbar-item theme-brand flex-row  text-center">
                 <li class="nav-item theme-logo">
                     <a href="index.html">
-                        <img src="img/logo.svg" class="navbar-logo" alt="logo">
+                        <img src="img/3SISLogo.svg" class="navbar-logo" alt="logo">
                     </a>
                 </li>
-                <li class="nav-item theme-text">
-                    <a href="index.html" class="nav-link"> CORK </a>
+                <li class="nav-item theme-text" style="font-size:50em">
+                    <!-- <a href="index.html" class="nav-link" > Journey Towards Excellence </a> -->
+                    <a href="index.html" class="nav-link" > JTE </a>
                 </li>
             </ul>
            
