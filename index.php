@@ -109,17 +109,17 @@ if(isset($_GET['project_name']) && $_GET['project_name'] != ''){
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">S&OP Pro</h5> -->
-        <h4><a href="javascript:vaoid(0)"  target="_blank" id="payroll">Payroll</a></h4>
+        <h4><a href="https://app1.3sispro.com/"  target="_blank" id="payroll">Payroll</a></h4>
 
       </div>
     </div>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-6 mt-2">
     <div class="card border">
       <div class="card-body">     
 
         <!-- <h5 class="card-title">Fiexed Asset </h5> -->
-        <h4><a href="http://localhost/project/project2" target="_blank">Fiexed Asset</a></h4>
+        <h4><a href="#" target="_blank">Fiexed Asset</a></h4>
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@ if(isset($_GET['project_name']) && $_GET['project_name'] != ''){
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">Payroll</h5> -->
-        <h4><a href="http://localhost/test/test_2" target="_blank">S&OP Pro</a></h4>
+        <h4><a href="#" target="_blank">S&OP Pro</a></h4>
       </div>
     </div>
   </div>
@@ -136,7 +136,7 @@ if(isset($_GET['project_name']) && $_GET['project_name'] != ''){
       <div class="card-body">
         <!-- <h5 class="card-title">Sales Force Automation</h5> -->
         <!-- <SFA.bat -->
-        <h4><a href="http://127.0.0.1:2500" target="_blank">Sales Force Automation</a></h4>
+        <h4><a href="#" target="_blank">Sales Force Automation</a></h4>
       </div>
     </div>
   </div>
@@ -152,7 +152,7 @@ if(isset($_GET['project_name']) && $_GET['project_name'] != ''){
     <div class="card border">
       <div class="card-body">
         <!-- <h5 class="card-title">Sales Force Automation</h5> -->
-        <h4><a href="http://localhost/test/test_4"  target="_blank" >AR/AP</a></h4>
+        <h4><a href="#"  target="_blank" >AR/AP</a></h4>
       </div>
     </div>
   </div>
@@ -161,7 +161,7 @@ if(isset($_GET['project_name']) && $_GET['project_name'] != ''){
     <div class="card border bg-success">
       <div class="card-body">
         <!-- <h5 class="card-title">Sales Force Automation</h5> -->
-        <h4><a href="http://localhost/test/test_4" target="_blank" >Tutorial</a></h4>
+        <h4><a href="#" target="_blank" >Tutorial</a></h4>
       </div>
     </div>
   </div>
@@ -173,10 +173,10 @@ if(isset($_GET['project_name']) && $_GET['project_name'] != ''){
     <script src="js/bootstrap.min.js"></script>
     <!-- END GLOBAL MANDATORY SCRIPTS -->
     <script>
-      $('#payroll').on("click",function(e){
-        e.preventDefault();
-        window.location.href = window.location.href+'?project_name=Payroll';
-      });
+      // $('#payroll').on("click",function(e){
+      //   e.preventDefault();
+      //   window.location.href = window.location.href+'?project_name=Payroll';
+      // });
 </script>
 </body>
 </html>
